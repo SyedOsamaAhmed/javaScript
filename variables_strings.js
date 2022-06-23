@@ -4,7 +4,6 @@ var firstName = "Osama";
 
 //console.log(firstName);
 
-firstName = "Rabia";
 // console.log(firstName);
 /*Rules for naming variables:
 1- variable name cannot start with number.
@@ -39,4 +38,22 @@ let age = 23,
 //string to Number:
 let str = +"34";
 //console.log(typeof str);
-console.log(typeof Number(str));
+// console.log(typeof Number(str));
+
+//string concatenation:
+let str1 = "Osama",
+  str2 = "Ahmed";
+// console.log(str1 + " " + str2);
+
+//template string:
+//console.log(`My name is ${firstName} and my age is ${age}`)
+
+//MAX_SAFE_INTEGER: how long a number can be stored on variable:
+let variable = 123;
+// console.log(Number.MAX_SAFE_INTEGER);
+
+//BigInt:
+let no = BigInt(3);
+// console.log(no);
+let sameno = 12n;
+// console.log(sameno);
