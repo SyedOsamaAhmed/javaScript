@@ -22,7 +22,19 @@ Truthy values in javascript are:
 1- "abc"
 2- 1,-1*/
 
-//ternary/conditional operator
+// ternary/conditional operator
 let age = 15;
 let drink = age > 5 ? "coffee" : "milk";
-console.log(drink);
+// console.log(drink);
+
+// Nested if else:
+
+let winningNum = 19,
+  userGuess;
+userGuess = +prompt("Enter a number:");
+
+if (userGuess === winningNum) console.log("Your guess is right!!!");
+else {
+  if (userGuess < winningNum) console.log("YOUR GUESS IS TOO LOW!!!!");
+  else console.log("YOUR GUESS IS TOO HIGH!!!!");
+}
