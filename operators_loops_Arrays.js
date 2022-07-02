@@ -31,10 +31,22 @@ let drink = age > 5 ? "coffee" : "milk";
 
 let winningNum = 19,
   userGuess;
-userGuess = +prompt("Enter a number:");
+/* userGuess = +prompt("Enter a number:");
 
 if (userGuess === winningNum) console.log("Your guess is right!!!");
 else {
   if (userGuess < winningNum) console.log("YOUR GUESS IS TOO LOW!!!!");
   else console.log("YOUR GUESS IS TOO HIGH!!!!");
-}
+} */
+
+//Arrays:
+
+//cloning:
+let arr1=["item1","item2"],arr2=arr1.slice(0),arr3=[].concat(arr2);
+
+//spread operator
+let arr4=[...arr2];
+
+arr1.push("item3");
+let arr=arr1.slice(0).concat(["item4"])
+console.log(arr);
