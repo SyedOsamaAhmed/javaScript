@@ -27,4 +27,23 @@ const obj2 = {
 };
 
 const obj3 = { ...obj1, ...obj2 };
-console.log(obj3);
+
+//destructuring in object:
+const artistInfo = {
+  name: "Salena Gomez",
+  age: 38,
+  native: "American",
+  occupation: "Singing",
+};
+
+const { name, age, ...restProps } = artistInfo;
+
+//Nested destructuring:
+const users = [
+  { userId: 1, name_: "Osama", gender_: "male" },
+  { userId: 2, name_: "Waqar", gender_: "male" },
+  { userId: 3, name_: "Maham", gender_: "female" },
+];
+
+const [{name_:name1,userId}, , {name_,gender_}] = users;
+
