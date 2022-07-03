@@ -42,11 +42,20 @@ else {
 //Arrays:
 
 //cloning:
-let arr1=["item1","item2"],arr2=arr1.slice(0),arr3=[].concat(arr2);
+let arr1 = ["item1", "item2"],
+  arr2 = arr1.slice(0),
+  arr3 = [].concat(arr2);
 
 //spread operator
-let arr4=[...arr2];
+let arr4 = [...arr2];
 
 arr1.push("item3");
-let arr=arr1.slice(0).concat(["item4"])
-console.log(arr);
+let arr = arr1.slice(0).concat(["item4"]);
+//console.log(arr);
+
+//for of loop:
+const fruits=["apple","orange","mango"];
+fruits.push("berry");
+
+for(let fruit of fruits)
+  console.log(fruit)
